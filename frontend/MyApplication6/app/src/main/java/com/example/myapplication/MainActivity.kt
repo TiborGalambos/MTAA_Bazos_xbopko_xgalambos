@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val newbutton = findViewById<Button>(R.id.AddNewItemButton)
+        val newbutton = findViewById<Button>(R.id.new_item_button)
         newbutton.setOnClickListener{
             val intent = Intent(this, NewItem::class.java)
             startActivity(intent)
