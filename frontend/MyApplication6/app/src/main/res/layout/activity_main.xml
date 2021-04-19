@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NewItem"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/raisin_black">
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,20 +17,22 @@
         android:layout_marginLeft="32dp"
         android:text="Main Page"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/cultured"
         android:textSize="30sp" />
 
     <Button
         android:id="@+id/my_profile_button"
         android:layout_width="150dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginRight="32dp"
-        android:backgroundTint="@color/grey"
+        android:backgroundTint="@color/sky_blue"
         android:text="My profile"
+        android:textColor="@color/raisin_black"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,7 +42,7 @@
         android:layout_marginLeft="32dp"
         android:text="Searchbar"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/cultured"
         android:textSize="20sp"/>
 
 
@@ -52,7 +56,7 @@
         android:drawablePadding="16dp"
         android:autofillHints="Computer"
         android:inputType="text"
-        android:background="@color/light_grey"/>
+        android:background="@color/cultured"/>
 
     <Button
         android:id="@+id/search_button"
@@ -61,7 +65,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="32dp"
-        android:backgroundTint="@color/grey"
+        android:backgroundTint="@color/bitter_sweet"
         android:text="Search"
         android:textSize="15sp"
         android:textStyle="bold" />
@@ -74,7 +78,7 @@
         android:layout_marginLeft="32dp"
         android:text="Search by category"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/cultured"
         android:textSize="20sp" />
 
     <Button
@@ -83,21 +87,23 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="32dp"
-        android:backgroundTint="@color/grey"
+        android:backgroundTint="@color/bitter_sweet"
         android:text="Show"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="@color/cultured"/>
 
     <Button
         android:id="@+id/new_item_button"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="128dp"
         android:layout_marginRight="32dp"
-        android:backgroundTint="@color/grey"
+        android:backgroundTint="@color/green_yellow"
         android:text="Add new item"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="@color/raisin_black"/>
 
 </LinearLayout>

@@ -10,4 +10,9 @@
     <color name="holo_blue_dark">#FF0099CC</color>
     <color name="light_grey">#D3D3D3</color>>
     <color name="grey">#808080</color>
+    <color name="raisin_black">#212738</color>
+    <color name="bitter_sweet">#f97068</color>
+    <color name="green_yellow">#d1d646</color>
+    <color name="cultured">#edf2ef</color>
+    <color name="sky_blue">#57c4e5</color>
 </resources>
