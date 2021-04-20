@@ -36,4 +36,17 @@ interface APIservice {
     ):Call<User>
 
 
+    @FormUrlEncoded
+    @POST("item/")
+    fun postItem(
+        @Header("Authorization") token: String,
+        @Field("category") category:String,
+        @Field("title") title:String,
+        @Field("content") content: String,
+        @Field("price") price:Int,
+        @Field("address") address:String,
+       // @Field("photo") photo: String?
+    ):Call<ItemResponse>
+
+
 }

@@ -23,7 +23,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:text="Category"
@@ -34,7 +34,7 @@
      <Spinner
          android:id="@+id/spinner"
          android:layout_width="match_parent"
-         android:layout_height="50dp"
+         android:layout_height="40dp"
          android:layout_marginRight="32dp"
          android:layout_marginLeft="32dp"
          android:layout_marginTop="8dp"
@@ -64,9 +64,9 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/title"
+        android:id="@+id/title_text"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_marginRight="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="8dp"
@@ -86,9 +86,32 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/content"
+        android:id="@+id/content_text"
         android:layout_width="match_parent"
-        android:layout_height="71dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="32dp"
+        android:autofillHints="Describe the selling product."
+        android:background="@color/cultured"
+        android:drawablePadding="16dp"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="Address"
+        android:textStyle="bold"
+        android:textColor="@color/cultured"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/address_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="32dp"
@@ -108,9 +131,9 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/price"
+        android:id="@+id/price_text"
         android:layout_width="152dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="32dp"
@@ -118,6 +141,7 @@
         android:background="@color/cultured"
         android:drawablePadding="16dp"
         android:inputType="number" />
+
 
     <Button
         android:id="@+id/post_button"

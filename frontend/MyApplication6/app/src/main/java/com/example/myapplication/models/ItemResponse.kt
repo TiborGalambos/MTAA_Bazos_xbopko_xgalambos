@@ -26,7 +26,7 @@ data class ItemResponse (
     var address: String,
 
     @SerializedName("photo")
-    var photo: String,
+    var photo: String?,
 
     @SerializedName("author")
     var author: Int
