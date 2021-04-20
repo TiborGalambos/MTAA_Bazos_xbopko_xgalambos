@@ -1,9 +1,12 @@
-package com.example.myapplication
+package com.example.myapplication.activityLogic
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import android.util.Log
+import com.example.myapplication.R
+import kotlinx.android.synthetic.main.activity_my_profile.*
+
 
 class MyProfile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,18 +14,16 @@ class MyProfile : AppCompatActivity() {
         setContentView(R.layout.activity_my_profile)
         supportActionBar?.hide()
 
+        //val token = intent.getSerializableExtra("token")
 
-        val logout_button = findViewById<Button>(R.id.logout)
-        logout_button.setOnClickListener{
+
+        logout.setOnClickListener{
+                        startActivity(intent)
+        }
+
+        show_my_items.setOnClickListener{
 //            intent = Intent(this, MainActivity::class.java)
 //            startActivity(intent)
         }
-
-        val my_items_button = findViewById<Button>(R.id.show_my_items)
-        my_items_button.setOnClickListener{
-//            intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-        }
-
     }
 }
