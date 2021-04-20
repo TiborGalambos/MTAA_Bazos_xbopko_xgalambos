@@ -2,10 +2,10 @@ package com.example.myapplication.models
 
 import com.google.gson.annotations.SerializedName
 
-data class LoginResponse (
+data class RegisterResponse (
 
-    @SerializedName("expiry")
-    var expiry: String,
+    @SerializedName("user")
+    var user: User,
 
     @SerializedName("token")
     var token: String

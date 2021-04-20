@@ -44,16 +44,16 @@
         android:textSize="25sp" />
 
     <TextView
-        android:id="@+id/username"
+        android:id="@+id/username_text_to_write"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="32dp"
+        android:layout_marginTop="1dp"
         android:text=""
-        android:textStyle="bold"
         android:textColor="@color/cultured"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
         android:textSize="25sp" />
 
     <TextView
-        android:id="@+id/email"
+        android:id="@+id/email_text_to_write"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"

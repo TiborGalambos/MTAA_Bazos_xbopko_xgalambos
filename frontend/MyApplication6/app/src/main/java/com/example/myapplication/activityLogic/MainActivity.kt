@@ -60,29 +60,26 @@ class MainActivity : AppCompatActivity() {
 
                         val loginResponse = response.body()
 
-
                         if (loginResponse != null) {
                             sessionManager.saveAuthToken(loginResponse.token)
 
                         val intent = Intent(applicationContext, HomeScreen::class.java)
                         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(intent)
-                            Log.d("Token", "resp " + loginResponse?.token)
-                            Log.d("Token", "resp " + response.toString())
+
                         }
                         else{
-                            Log.d("Token", "resp " + loginResponse?.token)
-                            Log.d("Token", "resp " + response.toString())
-
-                            Log.d("NAME2", " " + username)
-                            Log.d("NAME2", " " + password)
                             Toast.makeText(applicationContext,"Wrong username or password",Toast.LENGTH_LONG).show()
-
-                    }
+                        }
                     }
                 })
         }
 
+        register_button.setOnClickListener {
 
+            val intent = Intent(applicationContext, Register::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+        }
     }
 }
