@@ -37,7 +37,6 @@ class NewItem : AppCompatActivity() {
 
     lateinit var file_path: Uri
     var code: Int = 0
-//    lateinit var photofile: File
 
     @RequiresApi(Build.VERSION_CODES.KITKAT)
     override fun onCreate(savedInstanceState: Bundle?) {

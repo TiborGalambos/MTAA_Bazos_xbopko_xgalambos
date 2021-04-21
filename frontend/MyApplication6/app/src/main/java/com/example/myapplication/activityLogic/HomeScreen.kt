@@ -21,13 +21,15 @@ class HomeScreen : AppCompatActivity() {
 
         my_profile_button.setOnClickListener{
             val intent = Intent(this, MyProfile::class.java)
-//            intent.putExtra("token", token)
             startActivity(intent)
         }
 
         new_item_button.setOnClickListener{
             val intent = Intent(this, NewItem::class.java)
-//            Log.d("TOKEN", " " + token)
+            startActivity(intent)
+        }
+        search_button.setOnClickListener{
+            val intent = Intent(this, Items::class.java)
             startActivity(intent)
         }
 

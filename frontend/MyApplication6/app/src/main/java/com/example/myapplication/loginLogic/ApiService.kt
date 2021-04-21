@@ -2,10 +2,7 @@ package com.example.myapplication.loginLogic
 
 
 import android.net.Uri
-import com.example.myapplication.models.ItemResponse
-import com.example.myapplication.models.LoginResponse
-import com.example.myapplication.models.RegisterResponse
-import com.example.myapplication.models.User
+import com.example.myapplication.models.*
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Call
@@ -54,6 +51,13 @@ interface APIservice {
             //@Part("photo") photo:MultipartBody.Part,
             @Part photo: MultipartBody.Part
     ):Call<ItemResponse>
+
+
+    @ExperimentalMultiplatform
+    @GET("item/all/")
+    fun showAllItems(
+        @Header("Authorization") token: String
+    ):Call<ItemList>
 
 
 }
