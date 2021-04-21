@@ -28,9 +28,9 @@ class APIclient {
     }
 
 //    private fun okhttpClient(context: Context): OkHttpClient {
-//        return OkHttpClient.Builder()
-//            .addInterceptor(AuthInterceptor(context))
-//            .build()
-//    }
+////        return OkHttpClient.Builder()
+////            .addInterceptor(AuthInterceptor(context))
+////            .build()
+////    }
 
 }

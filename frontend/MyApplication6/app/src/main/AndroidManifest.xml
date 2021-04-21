@@ -3,6 +3,7 @@
     package="com.example.myapplication">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -14,8 +15,6 @@
         android:usesCleartextTraffic="true">
         <activity android:name=".activityLogic.HomeScreen"></activity>
         <activity android:name=".activityLogic.Register" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".activityLogic.Login" />
         <activity android:name=".activityLogic.MyProfile" />
         <activity android:name=".activityLogic.added_item" />
         <activity android:name=".activityLogic.NewItem" />
@@ -29,6 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

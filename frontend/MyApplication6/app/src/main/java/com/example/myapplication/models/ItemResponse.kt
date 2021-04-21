@@ -1,5 +1,6 @@
 package com.example.myapplication.models
 
+import android.net.Uri
 import com.google.gson.annotations.SerializedName
 
 data class ItemResponse (
@@ -26,7 +27,7 @@ data class ItemResponse (
     var address: String,
 
     @SerializedName("photo")
-    var photo: String?,
+    var photo: String,
 
     @SerializedName("author")
     var author: Int

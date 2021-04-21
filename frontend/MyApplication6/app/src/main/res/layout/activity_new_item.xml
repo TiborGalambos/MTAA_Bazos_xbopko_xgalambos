@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:text="Creating New Item"
@@ -39,18 +39,6 @@
          android:layout_marginLeft="32dp"
          android:layout_marginTop="8dp"
          android:background="@color/cultured"/>
-
-<!--    <EditText-->
-<!--        android:id="@+id/category"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_marginRight="32dp"-->
-<!--        android:layout_marginLeft="32dp"-->
-<!--        android:layout_marginTop="8dp"-->
-<!--        android:drawablePadding="16dp"-->
-<!--        android:autofillHints=""-->
-<!--        android:inputType="text"-->
-<!--        android:background="@color/cultured"/>-->
 
     <TextView
         android:layout_width="wrap_content"
@@ -119,6 +107,7 @@
         android:background="@color/cultured"
         android:drawablePadding="16dp"
         android:inputType="text" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -142,13 +131,38 @@
         android:drawablePadding="16dp"
         android:inputType="number" />
 
+    <Button
+        android:id="@+id/photo_button"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="195dp"
+        android:backgroundTint="@color/bitter_sweet"
+        android:text="Upload photo"
+        android:textColor="@color/raisin_black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/photo_file"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="195dp"
+
+        android:textColor="@color/raisin_black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
 
     <Button
         android:id="@+id/post_button"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="15dp"
         android:layout_marginRight="32dp"
         android:backgroundTint="@color/green_yellow"
         android:text="Post this item"

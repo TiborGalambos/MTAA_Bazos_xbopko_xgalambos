@@ -1,12 +1,17 @@
 package com.example.myapplication.loginLogic
 
 
+import android.net.Uri
 import com.example.myapplication.models.ItemResponse
 import com.example.myapplication.models.LoginResponse
 import com.example.myapplication.models.RegisterResponse
 import com.example.myapplication.models.User
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
 import retrofit2.Call
+import retrofit2.Retrofit
 import retrofit2.http.*
+import java.io.File
 
 
 interface APIservice {
@@ -31,21 +36,23 @@ interface APIservice {
     fun userInfo(@Header("Authorization") token: String
     ):Call<User>
 
+
     @POST("user/logout/")
     fun logOut(@Header("Authorization") token: String
     ):Call<User>
 
 
-    @FormUrlEncoded
+    @Multipart
     @POST("item/")
     fun postItem(
-        @Header("Authorization") token: String,
-        @Field("category") category:String,
-        @Field("title") title:String,
-        @Field("content") content: String,
-        @Field("price") price:Int,
-        @Field("address") address:String,
-       // @Field("photo") photo: String?
+            @Header("Authorization") token: String,
+            @Part("category") category:String,
+            @Part("title") title:String,
+            @Part("content") content: String,
+            @Part("price") price:Int,
+            @Part("address") address:String,
+            //@Part("photo") photo:MultipartBody.Part,
+            @Part photo: MultipartBody.Part
     ):Call<ItemResponse>
 
 

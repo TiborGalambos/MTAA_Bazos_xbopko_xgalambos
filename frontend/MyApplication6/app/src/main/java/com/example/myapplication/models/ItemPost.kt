@@ -1,6 +1,8 @@
 package com.example.myapplication.models
 
+import android.net.Uri
 import com.google.gson.annotations.SerializedName
+import java.io.File
 
 data class ItemPost (
     @SerializedName("category")
@@ -19,6 +21,6 @@ data class ItemPost (
     var address: String,
 
     @SerializedName("photo")
-    var photo: String,
+    var photo: File
 
 )
