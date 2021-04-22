@@ -13,8 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ItemDetailActivity"></activity>
+        <activity android:name=".activityLogic.EditItem"></activity>
+        <activity android:name=".activityLogic.ItemDetailActivity" />
         <activity android:name=".activityLogic.Items" />
+        <activity android:name=".activityLogic.MyItems" />
         <activity android:name=".activityLogic.HomeScreen" />
         <activity android:name=".activityLogic.Register" />
         <activity android:name=".activityLogic.MyProfile" />

@@ -59,5 +59,35 @@ interface APIservice {
         @Header("Authorization") token: String
     ):Call<ItemList>
 
+    @ExperimentalMultiplatform
+    @GET("myitems/")
+    fun showAllMyItems(
+            @Header("Authorization") token: String
+    ):Call<ItemList>
+
+
+    @GET("item/{item_id_url}/")
+    fun getThisItem(
+        @Path("item_id_url") item_id_url:Int,
+        @Header("Authorization") token: String
+    ):Call<ItemResponse>
+
+    @DELETE("myitems/delete/{item_id_url}/")
+    fun deleteThisItem(
+        @Path("item_id_url") item_id_url:Int,
+        @Header("Authorization") token: String
+    ):Call<DeleteResponse>
+
+    @Multipart
+    @PUT("myitems/update/{item_id_url}/")
+    fun editThisItem(
+        @Path("item_id_url") item_id_url:Int,
+        @Header("Authorization") token: String,
+        @Part("category") category:String,
+        @Part("title") title:String,
+        @Part("content") content: String,
+        @Part("price") price:Int,
+        @Part("address") address:String,
+    ):Call<ItemResponse>
 
 }

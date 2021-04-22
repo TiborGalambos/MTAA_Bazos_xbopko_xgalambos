@@ -15,7 +15,7 @@
         android:layout_marginTop="300dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:text="Item Successfully Added!"
+        android:text="Item Successfully Posted!"
         android:textStyle="bold"
         android:textColor="@color/cultured"
         android:textSize="30sp"

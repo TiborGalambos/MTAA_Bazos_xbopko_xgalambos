@@ -7,7 +7,11 @@ import android.os.Bundle
 import android.util.Log
 import com.example.myapplication.R
 import com.example.myapplication.loginLogic.SessionManager
+import com.example.myapplication.models.ItemList
+import com.example.myapplication.models.MyItemListAdapter
 import com.example.myapplication.models.User
+import kotlinx.android.synthetic.main.activity_items.*
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_my_profile.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -17,7 +21,9 @@ class MyProfile : AppCompatActivity() {
 
     lateinit var sessionManager: SessionManager
     private lateinit var apiClient: APIclient
+    lateinit var ids:Array<String?>
 
+    @ExperimentalMultiplatform
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_profile)
@@ -58,9 +64,8 @@ class MyProfile : AppCompatActivity() {
         }
 
         show_my_items.setOnClickListener{
-
-//            intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
+            val intent = Intent(this, MyItems::class.java)
+            startActivity(intent)
         }
     }
 }

@@ -3,4 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.myapplication.activityLogic.MainActivity">
 
+   <item
+       android:id="@+id/edit"
+       android:title="Edit"
+       app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/delete"
+        android:title="Delete"
+        app:showAsAction="always"/>
+
 </menu>

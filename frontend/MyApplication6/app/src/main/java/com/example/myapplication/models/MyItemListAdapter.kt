@@ -12,7 +12,7 @@ import com.example.myapplication.R
 import com.example.myapplication.loginLogic.Constants
 import com.squareup.picasso.Picasso
 
-class ItemListAdapter(private val context: Context,
+class MyItemListAdapter(private val context: Context,
                       private val authors: Array<String?>,
                       private val categories: Array<String?>,
                       private val titles: Array<String?>,
