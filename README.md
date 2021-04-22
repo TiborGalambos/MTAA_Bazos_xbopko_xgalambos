@@ -1,4 +1,3 @@
-"# MTAA_Bazos_xbopko_xgalambos"
+# MTAA Bazos app
+
 Frontend for this app is available [HERE](https://github.com/TiborGalambos/MTAA_Bazos_Frontend)
-Tibor Galambos
-Martin Bopkó
